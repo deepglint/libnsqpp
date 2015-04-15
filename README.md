@@ -1,7 +1,7 @@
 #Libnsqpp
-##A cpp client library for NSQ
+###A cpp client library for NSQ
 
-Libnsqpp is the client library for nsq
+Libnsqpp is the client library for nsq, which is developed by Boost, means that it can be used on Mac OS, and Windows, and Linux.
 
 By now libnsqpp only support for subscribe
 
