@@ -1,7 +1,7 @@
 #Libnsqpp
 ##A cpp client library for NSQ
 
-Libnsqpp is the client library for nsq 
+Libnsqpp is the client library for nsq
 
 By now libnsqpp only support for subscribe
 
@@ -39,5 +39,25 @@ int  main(int argc, char const *argv[])
 	workerThread.join();
 	return 0;
 }
-
 ```
+As you can see above, that when you use it, you should note the message receive and on disconnect handler.
+
+When the message handler is called, you can get the Message body vector vc, vc.data()+30 is the begin of Message Data Body.
+
+###TODO:
+
+###Message Object
+
+libnsqpp needs a message class and object 
+
+###Pub/MPub function
+
+Libnsqpp needs these 2 method to streaming posting data into nsqd
+
+###Support for nsqlookupd 
+
+By now, libnsqpp only support to subscribe the messages from nsqd with out nsqlookupd
+
+###Identify/Auth
+
+The Identify & Auth rule and method for client to do more security things
